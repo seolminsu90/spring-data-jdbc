@@ -62,7 +62,7 @@ CREATE TABLE MEMBER
   
   CREATE TABLE Comment
   (
-    id BIGINT,
+    id BIGINT auto_increment,
     articleId BIGINT,
     createdAt DATETIME NULL,
     updatedAt DATETIME NULL,

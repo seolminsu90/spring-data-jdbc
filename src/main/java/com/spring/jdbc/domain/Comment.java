@@ -31,6 +31,11 @@ public class Comment {
     public Comment() {
     }
 
+    public Comment(Long articleId, final String content) {
+        this.articleId = articleId;
+        this.content = content;
+    }
+
     public Comment(final String content) {
         this.content = content;
     }
