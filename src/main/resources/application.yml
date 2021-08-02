@@ -1,0 +1,23 @@
+# H2 설정
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  sql:
+    init:
+      mode: always
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb;MODE=MYSQL;DATABASE_TO_UPPER=FALSE
+    username: sa
+    password:
+    hikari:
+      jdbc-url: jdbc:h2:mem:testdb;MODE=MYSQL;DATABASE_TO_UPPER=FALSE
+logging:
+  level:
+    org:
+      springframework:
+        jdbc:
+          core:
+            JdbcTemplate: debug
